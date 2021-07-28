@@ -1,0 +1,343 @@
+stackbitVersion: ~0.3.0
+dataDir: languages
+models:
+  language:
+    type: data
+    label: Language
+    fields:
+      - type: object
+        name: footer
+        label: Footer
+        fields:
+          - type: string
+            name: framework
+            label: Framework
+          - type: string
+            name: theme
+            label: Theme
+      - type: object
+        name: copy
+        label: Copy
+        fields:
+          - type: string
+            name: success
+            label: Success
+          - type: string
+            name: error
+            label: Error
+          - type: string
+            name: noSupport
+            label: No Support
+      - type: object
+        name: page
+        label: Page
+        fields:
+          - type: string
+            name: articles
+            label: Articles
+          - type: string
+            name: tag
+            label: Tag
+          - type: string
+            name: category
+            label: Category
+          - type: string
+            name: archives
+            label: Archives
+      - type: string
+        name: card_post_count
+        label: Card Post Count
+      - type: string
+        name: sticky
+        label: Sticky
+      - type: string
+        name: no_title
+        label: No Title
+      - type: object
+        name: post
+        label: Post
+        fields:
+          - type: string
+            name: created
+            label: Created
+          - type: string
+            name: updated
+            label: Updated
+          - type: string
+            name: wordcount
+            label: Wordcount
+          - type: string
+            name: min2read
+            label: Min 2 Read
+          - type: string
+            name: min2read_unit
+            label: Min 2 Read Unit
+          - type: string
+            name: page_pv
+            label: Page Pv
+          - type: string
+            name: comments
+            label: Comments
+          - type: object
+            name: copyright
+            label: Copyright
+            fields:
+              - type: string
+                name: author
+                label: Author
+              - type: string
+                name: link
+                label: Link
+              - type: string
+                name: copyright_notice
+                label: Copyright Notice
+              - type: markdown
+                name: copyright_content
+                label: Copyright Content
+          - type: string
+            name: recommend
+            label: Recommend
+          - type: string
+            name: edit
+            label: Edit
+      - type: string
+        name: search
+        label: Search
+      - type: object
+        name: algolia_search
+        label: Algolia Search
+        fields:
+          - type: string
+            name: input_placeholder
+            label: Input Placeholder
+          - type: string
+            name: hits_empty
+            label: Hits Empty
+          - type: string
+            name: hits_stats
+            label: Hits Stats
+      - type: object
+        name: local_search
+        label: Local Search
+        fields:
+          - type: string
+            name: label
+            label: Label
+          - type: string
+            name: input_placeholder
+            label: Input Placeholder
+          - type: string
+            name: hits_empty
+            label: Hits Empty
+      - type: object
+        name: pagination
+        label: Pagination
+        fields:
+          - type: string
+            name: prev
+            label: Prev
+          - type: string
+            name: next
+            label: Next
+      - type: string
+        name: comment
+        label: Comment
+      - type: object
+        name: aside
+        label: Aside
+        fields:
+          - type: string
+            name: articles
+            label: Articles
+          - type: string
+            name: tags
+            label: Tags
+          - type: string
+            name: categories
+            label: Categories
+          - type: string
+            name: card_announcement
+            label: Card Announcement
+          - type: string
+            name: card_categories
+            label: Card Categories
+          - type: string
+            name: card_tags
+            label: Card Tags
+          - type: string
+            name: card_archives
+            label: Card Archives
+          - type: string
+            name: card_recent_post
+            label: Card Recent Post
+          - type: object
+            name: card_webinfo
+            label: Card Webinfo
+            fields:
+              - type: string
+                name: headline
+                label: Headline
+              - type: string
+                name: article_name
+                label: Article Name
+              - type: object
+                name: runtime
+                label: Runtime
+                fields:
+                  - type: string
+                    name: name
+                    label: Name
+                  - type: string
+                    name: unit
+                    label: Unit
+              - type: object
+                name: last_push_date
+                label: Last Push Date
+                fields:
+                  - type: string
+                    name: name
+                    label: Name
+              - type: string
+                name: site_wordcount
+                label: Site Wordcount
+              - type: string
+                name: site_uv_name
+                label: Site Uv Name
+              - type: string
+                name: site_pv_name
+                label: Site Pv Name
+          - type: string
+            name: more_button
+            label: More Button
+          - type: object
+            name: card_newest_comments
+            label: Card Newest Comments
+            fields:
+              - type: string
+                name: headline
+                label: Headline
+              - type: string
+                name: loading_text
+                label: Loading Text
+              - type: string
+                name: error
+                label: Error
+              - type: string
+                name: zero
+                label: Zero
+              - type: string
+                name: image
+                label: Image
+              - type: string
+                name: link
+                label: Link
+              - type: string
+                name: code
+                label: Code
+          - type: string
+            name: card_toc
+            label: Card Toc
+      - type: object
+        name: date_suffix
+        label: Date Suffix
+        fields:
+          - type: string
+            name: just
+            label: Just
+          - type: string
+            name: min
+            label: Min
+          - type: string
+            name: hour
+            label: Hour
+          - type: string
+            name: day
+            label: Day
+          - type: string
+            name: month
+            label: Month
+      - type: string
+        name: donate
+        label: Donate
+      - type: string
+        name: share
+        label: Share
+      - type: object
+        name: rightside
+        label: Rightside
+        fields:
+          - type: string
+            name: readmode_title
+            label: Readmode Title
+          - type: string
+            name: font_plus_title
+            label: Font Plus Title
+          - type: string
+            name: font_minus_title
+            label: Font Minus Title
+          - type: string
+            name: translate_title
+            label: Translate Title
+          - type: string
+            name: night_mode_title
+            label: Night Mode Title
+          - type: string
+            name: back_to_top
+            label: Back To Top
+          - type: string
+            name: toc
+            label: Toc
+          - type: string
+            name: scroll_to_comment
+            label: Scroll To Comment
+          - type: string
+            name: setting
+            label: Setting
+          - type: string
+            name: aside
+            label: Aside
+      - type: object
+        name: copy_copyright
+        label: Copy Copyright
+        fields:
+          - type: string
+            name: author
+            label: Author
+          - type: string
+            name: link
+            label: Link
+          - type: string
+            name: source
+            label: Source
+          - type: string
+            name: info
+            label: Info
+      - type: object
+        name: Snackbar
+        label: Snackbar
+        fields:
+          - type: string
+            name: chs_to_cht
+            label: Chs To Cht
+          - type: string
+            name: cht_to_chs
+            label: Cht To Chs
+          - type: string
+            name: day_to_night
+            label: Day To Night
+          - type: string
+            name: night_to_day
+            label: Night To Day
+      - type: string
+        name: loading
+        label: Loading
+      - type: object
+        name: error404
+        label: Error 404
+        fields:
+          - type: string
+            name: error_title
+            label: Error Title
+          - type: string
+            name: back_button
+            label: Back Button
